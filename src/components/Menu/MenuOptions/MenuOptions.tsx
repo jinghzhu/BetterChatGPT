@@ -12,6 +12,7 @@ import { TotalTokenCostDisplay } from '@components/SettingsMenu/TotalTokenCost';
 
 const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID || undefined;
 
+// menu set
 const MenuOptions = () => {
   const hideMenuOptions = useStore((state) => state.hideMenuOptions);
   const countTotalTokens = useStore((state) => state.countTotalTokens);
@@ -25,9 +26,9 @@ const MenuOptions = () => {
       >
         {countTotalTokens && <TotalTokenCostDisplay />}
         {googleClientId && <GoogleSync clientId={googleClientId} />}
-        <AboutMenu />
-        <ImportExportChat />
-        <Api />
+        {/*<AboutMenu />*/}
+        {/*<ImportExportChat />*/}
+        {/*<Api /> */}
         <SettingsMenu />
         <Me />
       </div>
