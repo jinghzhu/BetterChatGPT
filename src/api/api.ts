@@ -88,7 +88,8 @@ export const getChatCompletionStream = async (
     // const path = `openai/deployments/${model}/chat/completions?api-version=${apiVersion}`;
     // set api version for Azure OpenAI - https://learn.microsoft.com/en-us/azure/ai-services/openai/reference
     const apiVersion = '2023-09-01-preview';
-    const path = `openai/deployments/gpt4-32k-lrr/chat/completions?api-version=${apiVersion}`
+    // const path = `openai/deployments/gpt4-32k-lrr/chat/completions?api-version=${apiVersion}`
+    const path = `openai/deployments/gpt4-dev1/chat/completions?api-version=${apiVersion}`
 
     if (!endpoint.endsWith(path)) {
       if (!endpoint.endsWith('/')) {
